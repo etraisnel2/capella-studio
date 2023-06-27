@@ -9,7 +9,7 @@
  * Contributors:
  *    Thales - initial API and implementation
  *******************************************************************************/
-target "capellastudio" with source, requirements
+target "capellastudio_rcptt" with source, requirements
 
 include "https://raw.githubusercontent.com/eclipse/kitalpha/master/releng/plugins/org.polarsys.kitalpha.releng.targets/kitalpha.targetplatform"
 
@@ -188,4 +188,9 @@ location Mylyn-3.26 "https://download.eclipse.org/mylyn/releases/3.26/" {
 
 location "https://download.eclipse.org/tools/orbit/downloads/2023-03/" {
 	ch.qos.logback.slf4j
+}
+
+location "https://download.eclipse.org/rcptt/nightly/2.5.5/latest/repository" {
+	org.eclipse.rcptt.platform.feature.group lazy
+	org.eclipse.rcptt.core.feature.group lazy
 }
